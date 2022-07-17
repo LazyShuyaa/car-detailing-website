@@ -43,7 +43,7 @@ class Body extends Component {
           {/*//=========== GRID BOX START =================================> */}
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-              <Image src={require("../images/battleship_Screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               {/* =============== === ACCORDIAN START === ===================*/}
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -87,7 +87,7 @@ class Body extends Component {
           {/*//=========== GRID BOX START =================================> */}
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
-              <Image src={require("../images/markup_editor_screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               {/* =============== === ACCORDIAN START === =================*/}
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -131,7 +131,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/drum-machine_screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               {/* =============== === ACCORDIAN START === ===================*/}
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -176,7 +176,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images//calculator_screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -220,7 +220,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/clock_screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -265,7 +265,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/Portfolio_screenshot_D-M.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -310,7 +310,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/quote-gen_screenshot.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -354,7 +354,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/light_switch.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -399,7 +399,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/robot-translator.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -444,7 +444,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/treasurehunt.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -488,7 +488,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/mad-libs.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -532,7 +532,7 @@ class Body extends Component {
           <Grid item xs={11} md={3.5}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
-              <Image src={require("../images/rock_paper_scissors.webp")} />
+              <Image src={require("../images/headlight.webp")} />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
               >
@@ -577,7 +577,8 @@ class Body extends Component {
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
               <Image
-                src={require("../images/Willis_Deluxe_Detail_Logo.webp")}
+                id="Price"
+                src={require("../images/headlight.webp")}
               />
               <Accordion
                 sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}

@@ -24,27 +24,21 @@ const pages = [
   <Link
     color="inherit"
     underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://github.com/JeremyDuncan"
+    href="#"
   >
     Home
   </Link>,
   <Link
     color="inherit"
     underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://www.linkedin.com/in/jeremy-duncan2021/"
+    href="#Price"
   >
     Prices
   </Link>,
   <Link
     color="inherit"
     underline="none"
-    target="_blank"
-    rel="noopener"
-    href="https://jeremy-duncan.notion.site/Military-Experience-7abdbb418a6b40e7b2abd161eed48cda"
+    href="#"
   >
     Contact Us
   </Link>,
