@@ -36,29 +36,8 @@ class Footer extends Component {
         >
           <Grid item xs={12}>
             <Item sx={{ bgcolor: 'primary.main', color: 'white'}}>
-              <Typography sx={{fontSize: ".8rem"}}>
-                I created this site with
-                <Link
-                  color="text.secondary"
-                  underline="none"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://reactjs.org/">
-                    &nbsp; React &nbsp;
-                </Link>
-                and &nbsp;
-                <Link
-                  color="text.secondary"
-                  underline="none"
-                  target="_blank"
-                  rel="noopener"
-                  href="https://mui.com/material-ui/getting-started/overview/">
-                    Material UI
-                </Link>
-                .
-              </Typography>
               <Typography>
-                Jeremy Duncan &copy; 2022
+                Copyright © 2022  Willis Deluxe Detailing LLC. 
               </Typography>
             </Item>
           </Grid>
