@@ -22,25 +22,33 @@ import "@fontsource/roboto/700.css";
 
 const pages = [
   <Link
-    color="inherit"
+    color="#000000"
     underline="none"
-    href="#"
+    href="#home"
   >
     Home
   </Link>,
   <Link
-    color="inherit"
+    color="#000000"
     underline="none"
-    href="#Price"
+    href="#price"
   >
+    Detailing
     Prices
   </Link>,
-  <Link
-    color="inherit"
+    <Link
+    color="#000000"
     underline="none"
-    href="#"
+    href="#hours"
   >
-    Contact Us
+    Business Hours
+  </Link>,
+  <Link
+    color="#000000"
+    underline="none"
+    href="#appointment"
+  >
+    Schedule Appointment
   </Link>,
 ];
 
@@ -75,11 +83,8 @@ const Header = () => {
             component="a"
             href="/"
             sx={{
-              mr: 10,
               display: { xs: "none", md: "flex" },
-              justifyContent: "space-between",
-              fontFamily: "monospace",
-              fontWeight: 700,
+              justifyContent: "flex-start",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -148,9 +153,11 @@ const Header = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
             {pages.map((page) => (
               <Button
+                size="small"
+                variant="contained"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my:2, width: "140px", color: "white", display: "flex" }}
+                sx={{ my:2, width: "140px", bgcolor: "secondary.dark", display: "flex" }}
               >
                 {page}
               </Button>

@@ -577,7 +577,6 @@ class Body extends Component {
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               {/*==> Image Link <== =========================================*/}
               <Image
-                id="Price"
                 src={require("../images/headlight.webp")}
               />
               <Accordion

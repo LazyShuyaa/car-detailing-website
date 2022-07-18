@@ -35,7 +35,7 @@ class Footer extends Component {
         alignItems="center"
         >
           <Grid item xs={12}>
-            <Item sx={{ bgcolor: 'primary.main', color: 'white'}}>
+            <Item sx={{ bgcolor: 'primary.main', color: 'black'}}>
               <Typography>
                 Copyright © 2022  Willis Deluxe Detailing LLC. 
               </Typography>
