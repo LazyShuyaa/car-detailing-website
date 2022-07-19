@@ -29,7 +29,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid color="#8aa3b4;" mt={5} id="hours">
+      <Grid color="#475762" mt={5} id="hours">
         .
       </Grid>
       <Grid mt={5}></Grid>
@@ -366,37 +366,10 @@ export default function BasicTable() {
                 </Grid>
 
                 <Divider variant="middle">
-                  <Typography pt={2} variant="h5" sx={{ fontWeight: "500" }}>
-                    Business Address:
+                  <Typography pt={3} variant="h5" sx={{ fontWeight: "500" }}>
+                   
                   </Typography>
                 </Divider>
-                <Typography variant="h6">43 Dallas Nebo Rd</Typography>
-                <Typography variant="h6">Dallas, GA 30157</Typography>
-                <Button
-                  color="info"
-                  href="https://goo.gl/maps/6q4FmJJ5FE8rK8f87"
-                  startIcon={<LocationOnIcon />}
-                  variant="contained"
-                >
-                  Directions
-                </Button>
-                <br />
-                <Divider variant="middle">
-                  <Typography pt={2} variant="h6">
-                    Call Anytime
-                  </Typography>
-                </Divider>
-                <Typography variant="h6">678-558-4991</Typography>
-                <Button
-                  color="info"
-                  href="tel:678-558-4991"
-                  startIcon={<CallIcon />}
-                  variant="contained"
-                >
-                  Call Now!
-                </Button>
-                <br />
-                <br />
               </Paper>
             </Grid>
           </Item>

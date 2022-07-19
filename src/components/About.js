@@ -118,7 +118,7 @@ export default function AboutUs() {
       >
         We guarantee you will be satisfied with our service.
       </Typography>
-
+      <br />
       <Grid
         container
         spacing={2}
@@ -180,7 +180,9 @@ export default function AboutUs() {
                 you are not satisfied, please let us know and we will do
                 whatever we can to make things right!
               </Typography>
+
               <Button
+                sx={{ mt: "5px" }}
                 color="info"
                 href="#appointment"
                 startIcon={<ArrowDownwardIcon />}
@@ -188,6 +190,8 @@ export default function AboutUs() {
               >
                 Schedule An Appointment!
               </Button>
+              <br />
+              <br />
             </Paper>
           </Item>
         </Grid>

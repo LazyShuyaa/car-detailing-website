@@ -9,6 +9,7 @@ import Body from "./components/Body";
 import Prices from "./components/Prices";
 import Services from "./components/Services";
 import Hours from "./components/Hours";
+import Contact from "./components/Contact.js"
 import Appointment from "./components/Appointment";
 import FinePrint from "./components/FinePrint";
 import Footer from "./components/Footer";
@@ -45,6 +46,7 @@ function App() {
         <Prices/>
         <Services />
         <Hours/>
+        <Contact />
         <Appointment />
         <FinePrint />
         <Footer />

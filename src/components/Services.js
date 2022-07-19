@@ -22,7 +22,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box id="services" sx={{ flexGrow: 1 }}>
-      <Grid color="#8aa3b4;" mt={5} id="service">
+      <Grid color="#475762" mt={5} id="service">
         .
       </Grid>
       <Grid mt={5}></Grid>

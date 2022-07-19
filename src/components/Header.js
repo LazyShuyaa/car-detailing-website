@@ -33,7 +33,7 @@ const pages = [
   <Link color="#000000" underline="none" href="#hours">
     Business Hours
   </Link>,
-  <Link color="#000000" underline="none" href="#appointment">
+  <Link color="#000000" underline="none" href="#contact">
     Schedule Appointment
   </Link>,
 ];

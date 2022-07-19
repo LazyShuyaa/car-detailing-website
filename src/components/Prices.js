@@ -44,7 +44,7 @@ const fullSuvRows = [createData("$40", "$70", "$75", "$200")];
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1, color: "primary.contrastText" }}>
-      <Grid color="#8aa3b4;" mt={5} id="price">
+      <Grid color="#475762" mt={5} id="price">
         .
       </Grid>
       <Grid mt={5}></Grid>
