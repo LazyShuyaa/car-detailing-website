@@ -46,8 +46,10 @@ class Body extends Component {
               <Image src={require("../images/Polishing Car Tire.webp")} />
             </Item>
           </Grid>
+      
           {/*//=========== GRID END =======================================> */}
         </Grid>
+
       </Box>
     );
   }

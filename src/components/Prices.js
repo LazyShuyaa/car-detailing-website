@@ -43,8 +43,15 @@ const fullSuvRows = [createData("$40", "$70", "$75", "$200")];
 
 export default function BasicTable() {
   return (
-    <Box id="price" sx={{ flexGrow: 1, color: "primary.contrastText" }}>
+    <Box sx={{ flexGrow: 1, color: "primary.contrastText" }}>
+       <Grid  color="#8aa3b4;" mt={5}  id="price">
+       .
+        </Grid>
+      <Grid  mt={5} >
+      
+      </Grid>
       <br />
+
       <Divider>
         <Typography
           sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
@@ -569,7 +576,11 @@ export default function BasicTable() {
                       <TableCell sx={{ fontWeight: "700" }} align="center">
                         {row.interior}
                       </TableCell>
-                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                      <TableCell
+                
+                        sx={{ fontWeight: "700" }}
+                        align="center"
+                      >
                         {row.deluxe}
                       </TableCell>
                     </TableRow>
