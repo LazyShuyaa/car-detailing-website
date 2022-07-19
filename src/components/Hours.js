@@ -29,29 +29,53 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <br />
+      <Grid color="#8aa3b4;" mt={5} id="hours">
+        .
+      </Grid>
+      <Grid mt={5}></Grid>
+
       <Divider>
+      <Paper
+          sx={{
+            p: ".2rem",
+            pr: "1.3rem",
+            pl: "1.3rem",
+            borderRadius: "65px",
+            bgcolor: "primary.main",
+            margin: "auto",
+            display: "flex",
+          }}
+          elevation={3}
+        >
         <Typography
-          sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
+          sx={{
+            fontWeight: "400",
+            display: { xs: "none", sm: "none", md: "flex" },
+          }}
           variant="h2"
         >
-          Hours of Operation
-        </Typography>
-        <Typography
-          sx={{ display: { xs: "none", sm: "flex", md: "none", xl: "none" } }}
-          variant="h4"
-        >
-          Hours of Operation
+          Business Hours
         </Typography>
         <Typography
           sx={{
+            fontWeight: "400",
+            display: { xs: "none", sm: "flex", md: "none", xl: "none" },
+          }}
+          variant="h4"
+        >
+          Business Hours
+        </Typography>
+        <Typography
+          sx={{
+            fontWeight: "400",
             display: { xs: "flex", sm: "none", md: "none" },
             fontSize: { xs: "2rem" },
           }}
           variant="h6"
         >
-          Hours of Operation
+          Business Hours
         </Typography>
+        </Paper>
       </Divider>
       <br />
       {/*//=========== GRID BOX START =================================> */}
