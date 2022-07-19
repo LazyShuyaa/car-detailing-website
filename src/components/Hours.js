@@ -1,19 +1,17 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
+import Button from "@mui/material/Button";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CallIcon from "@mui/icons-material/Call";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -23,21 +21,9 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-function createData(handWash, exterior, interior, deluxe) {
-  return { handWash, exterior, interior, deluxe };
-}
-
-const carRows = [createData("$15", "$30", "$35", "$130")];
-const truckRows = [createData("$15", "$30", "$35", "$130")];
-const extTruckRows = [createData("$15", "$30", "$35", "$130")];
-const vanRows = [createData("$15", "$30", "$35", "$130")];
-const smallSuvRows = [createData("$15", "$30", "$35", "$130")];
-const midSuvRows = [createData("$15", "$30", "$35", "$130")];
-const fullSuvRows = [createData("$15", "$30", "$35", "$130")];
-
 export default function BasicTable() {
   return (
-    <Box id="hours" sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <br />
       <Divider>
         <Typography
@@ -62,7 +48,7 @@ export default function BasicTable() {
           Hours of Operation
         </Typography>
       </Divider>
-          <br/>
+      <br />
       {/*//=========== GRID BOX START =================================> */}
 
       <Grid
@@ -72,7 +58,7 @@ export default function BasicTable() {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={12} sm={10} md={10} lg={10} xl={7}>
+        <Grid item xs={11} sm={10} md={10} lg={10} xl={7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -115,7 +101,6 @@ export default function BasicTable() {
                     bgcolor="secondary.dark"
                     color="primary.contrastText"
                     sx={{
-                      bgcolor: "primary.main",
                       fontSize: { xs: "1rem", md: "1.5rem" },
                       fontWeight: 700,
                     }}
@@ -287,8 +272,8 @@ export default function BasicTable() {
                     margin: "auto",
                     justifyContent: "space-between",
                     bgcolor: "secondary.dark",
-                    pl: { xs: 2, md: 4},
-                    pr: { xs: 2, md: 4},
+                    pl: { xs: 2, md: 4 },
+                    pr: { xs: 2, md: 4 },
                   }}
                 >
                   <Typography
@@ -350,6 +335,39 @@ export default function BasicTable() {
                     9:00 AM - 3:00 PM
                   </Typography>
                 </Grid>
+
+                <Divider variant="middle">
+                  <Typography pt={2} variant="h5" sx={{ fontWeight: "500" }}>
+                    Business Address:
+                  </Typography>
+                </Divider>
+                <Typography variant="h6">43 Dallas Nebo Rd</Typography>
+                <Typography variant="h6">Dallas, GA 30157</Typography>
+                <Button
+                  color="info"
+                  href="https://goo.gl/maps/6q4FmJJ5FE8rK8f87"
+                  startIcon={<LocationOnIcon />}
+                  variant="contained"
+                >
+                  Directions
+                </Button>
+                <br />
+                <Divider variant="middle">
+                  <Typography pt={2} variant="h6">
+                    Call Anytime
+                  </Typography>
+                </Divider>
+                <Typography variant="h6">678-558-4991</Typography>
+                <Button
+                  color="info"
+                  href="tel:678-558-4991"
+                  startIcon={<CallIcon />}
+                  variant="contained"
+                >
+                  Call Now!
+                </Button>
+                <br />
+                <br />
               </Paper>
             </Grid>
           </Item>

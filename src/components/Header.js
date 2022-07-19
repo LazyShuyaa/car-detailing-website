@@ -1,6 +1,6 @@
 // *****************************************************************************
 // This component displays the Header section and links
-// Goes to ==> App.js Component 
+// Goes to ==> App.js Component
 // *****************************************************************************
 
 import * as React from "react";
@@ -21,33 +21,16 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 const pages = [
-  <Link
-    color="#000000"
-    underline="none"
-    href="#home"
-  >
+  <Link color="#000000" underline="none" href="#home">
     Home
   </Link>,
-  <Link
-    color="#000000"
-    underline="none"
-    href="#price"
-  >
-    Detailing
-    Prices
+  <Link color="#000000" underline="none" href="#price">
+    Detailing Prices
   </Link>,
-    <Link
-    color="#000000"
-    underline="none"
-    href="#hours"
-  >
+  <Link color="#000000" underline="none" href="#hours">
     Business Hours
   </Link>,
-  <Link
-    color="#000000"
-    underline="none"
-    href="#appointment"
-  >
+  <Link color="#000000" underline="none" href="#appointment">
     Schedule Appointment
   </Link>,
 ];
@@ -69,14 +52,11 @@ const Header = () => {
   };
 
   return (
-    <AppBar
-    position="sticky"
-    >
+    <AppBar position="sticky">
       <Container
-        sx={{justifyContent: {xs: "space-evenly", lg: "space-around"}}}
+        sx={{ justifyContent: { xs: "space-evenly", lg: "space-around" } }}
       >
         <Toolbar disableGutters>
-
           <Typography
             variant="h6"
             noWrap
@@ -87,14 +67,18 @@ const Header = () => {
               justifyContent: "flex-start",
               color: "inherit",
               textDecoration: "none",
+              textAlign: "bottom",
             }}
           >
             {/* Desktop View */}
-            <img 
-            sx={{ padding: "0px",display: { xs: "none", md: "flex" } }}
-            width="70%" src={require("../images/Willis_Deluxe_Detail_Logo.png")} />
+            <img
+              alt="Willis Deluxe Detailing llc"
+              sx={{ padding: "0px", display: { xs: "none", md: "flex" } }}
+              width="70%"
+              src={require("../images/Willis_Deluxe_Detail_Logo.png")}
+            />
           </Typography>
-          
+
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -103,7 +87,6 @@ const Header = () => {
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
-              
             >
               <MenuIcon />
             </IconButton>
@@ -122,7 +105,7 @@ const Header = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" }
+                display: { xs: "block", md: "none" },
               }}
             >
               {pages.map((page) => (
@@ -145,19 +128,29 @@ const Header = () => {
               fontWeight: 700,
               letterSpacing: ".1rem",
               color: "inherit",
-              textDecoration: "none"
+              textDecoration: "none",
             }}
           >
             {/* Mobile View */}
-            <img width="90%" src={require("../images/Willis_Deluxe_Detail_Logo.png")} />          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+            <img
+              alt="Willis Deluxe Detailing llc"
+              width="90%"
+              src={require("../images/Willis_Deluxe_Detail_Logo.png")}
+            />{" "}
+          </Typography>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
                 size="small"
                 variant="contained"
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my:2, width: "140px", bgcolor: "secondary.dark", display: "flex" }}
+                sx={{
+                  my: 2,
+                  width: "140px",
+                  bgcolor: "secondary.dark",
+                  display: "flex",
+                }}
               >
                 {page}
               </Button>

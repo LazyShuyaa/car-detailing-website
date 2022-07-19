@@ -1,12 +1,9 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
-
 import Table from "@mui/material/Table";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-
 import Divider from "@mui/material/Divider";
-
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
@@ -14,7 +11,10 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -39,10 +39,10 @@ const fullSuvRows = [createData("$40", "$70", "$75", "$200")];
 export default function BasicTable() {
   return (
     <Box id="price" sx={{ flexGrow: 1, color: "primary.contrastText" }}>
-      <br/>
+      <br />
       <Divider>
         <Typography
-          sx={{ display: { xs: "none", sm: "none", md: "flex"} }}
+          sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
           variant="h2"
         >
           Detailing Prices
@@ -54,13 +54,16 @@ export default function BasicTable() {
           Detailing Prices
         </Typography>
         <Typography
-          sx={{ display: { xs: "flex", sm: "none", md: "none" }, fontSize: "2rem" }}
+          sx={{
+            display: { xs: "flex", sm: "none", md: "none" },
+            fontSize: "2rem",
+          }}
           variant="h6"
         >
           Detailing Prices
         </Typography>
       </Divider>
-      <br/>
+      <br />
       <Grid
         container
         spacing={2}
@@ -69,21 +72,24 @@ export default function BasicTable() {
         alignItems="center"
       >
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Car
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Car
+                </Typography>
+              </Divider>
             </Paper>
-            
+
             {/* === === === === === CAR TABLE CONTAINER === === === === ===  */}
             <TableContainer component={Paper}>
               <Table
@@ -95,11 +101,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}} >
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -107,12 +121,20 @@ export default function BasicTable() {
                     <TableRow
                       bgColor="#b0bec9"
                       key={row.name}
-                      sx={{ "&:last-child td, &:last-child th": { border: 0 }}}
+                      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -122,19 +144,22 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Regular Cab Truck
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Regular Cab Truck
+                </Typography>
+              </Divider>
             </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
@@ -148,11 +173,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -162,10 +195,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -175,19 +216,22 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Extended Cab Truck
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Extended Cab Truck
+                </Typography>
+              </Divider>
             </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
@@ -201,11 +245,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -215,10 +267,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -228,20 +288,23 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Van
-              </Typography>
-            </Divider>
-           </Paper>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Van
+                </Typography>
+              </Divider>
+            </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
             <TableContainer component={Paper}>
@@ -254,11 +317,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -268,10 +339,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -281,19 +360,22 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Small SUV
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Small SUV
+                </Typography>
+              </Divider>
             </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
@@ -307,11 +389,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -321,10 +411,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -334,19 +432,22 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Mid-Size SUV
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Mid-Size SUV
+                </Typography>
+              </Divider>
             </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
@@ -360,11 +461,19 @@ export default function BasicTable() {
                 aria-label="simple table"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -374,10 +483,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
@@ -387,19 +504,22 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={12} sm ={11} md={6} lg={4} xl={3} >
-          <Item elevation={4} sx={{ bgcolor: "primary.dark", color: "primary.contrastText"}}>
-          <Paper sx={{bgcolor: "primary.light"}}>
-            <Divider variant="middle">
-              <Typography
-                variant="h6"
-                sx={{
-                  fontWeight: 700,
-                }}
-              >
-                Full-Size SUV
-              </Typography>
-            </Divider>
+        <Grid item xs={11.6} sm={11} md={6} lg={4} xl={3}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Full-Size SUV
+                </Typography>
+              </Divider>
             </Paper>
 
             {/* === === === === === === TABLE CONTAINER === === === === === === ===  */}
@@ -413,11 +533,19 @@ export default function BasicTable() {
                 aria-label="#b0bec9"
               >
                 <TableHead>
-                  <TableRow sx={{bgcolor: "primary.main"}}>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Hand Wash</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Interior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Exterior Detail</TableCell>
-                    <TableCell  sx={{fontWeight: "700"}} align="center">Deluxe Detail**</TableCell>
+                  <TableRow sx={{ bgcolor: "primary.main" }}>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Hand Wash
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Interior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Exterior Detail
+                    </TableCell>
+                    <TableCell sx={{ fontWeight: "700" }} align="center">
+                      Deluxe Detail**
+                    </TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -427,10 +555,18 @@ export default function BasicTable() {
                       key={row.name}
                       sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
                     >
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.handWash}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.exterior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.interior}</TableCell>
-                      <TableCell  sx={{fontWeight: "700"}} align="center">{row.deluxe}</TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.handWash}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.exterior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.interior}
+                      </TableCell>
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
+                        {row.deluxe}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>
