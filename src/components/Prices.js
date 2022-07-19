@@ -44,36 +44,54 @@ const fullSuvRows = [createData("$40", "$70", "$75", "$200")];
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1, color: "primary.contrastText" }}>
-       <Grid  color="#8aa3b4;" mt={5}  id="price">
-       .
-        </Grid>
-      <Grid  mt={5} >
-      
+      <Grid color="#8aa3b4;" mt={5} id="price">
+        .
       </Grid>
+      <Grid mt={5}></Grid>
       <br />
 
       <Divider>
-        <Typography
-          sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
-          variant="h2"
-        >
-          Detailing Prices
-        </Typography>
-        <Typography
-          sx={{ display: { xs: "none", sm: "flex", md: "none", xl: "none" } }}
-          variant="h4"
-        >
-          Detailing Prices
-        </Typography>
-        <Typography
+        <Paper
           sx={{
-            display: { xs: "flex", sm: "none", md: "none" },
-            fontSize: "2rem",
+            p: ".2rem",
+            pr: "1.3rem",
+            pl: "1.3rem",
+            borderRadius: "65px",
+            bgcolor: "primary.main",
+            margin: "auto",
+            display: "flex",
           }}
-          variant="h6"
+          elevation={3}
         >
-          Detailing Prices
-        </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "none", md: "flex" },
+            }}
+            variant="h2"
+          >
+            Detailing Prices
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "flex", md: "none", xl: "none" },
+            }}
+            variant="h4"
+          >
+            Detailing Prices
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "flex", sm: "none", md: "none" },
+              fontSize: "2rem",
+            }}
+            variant="h6"
+          >
+            Detailing Prices
+          </Typography>
+        </Paper>
       </Divider>
       <br />
       <Grid
@@ -576,11 +594,7 @@ export default function BasicTable() {
                       <TableCell sx={{ fontWeight: "700" }} align="center">
                         {row.interior}
                       </TableCell>
-                      <TableCell
-                
-                        sx={{ fontWeight: "700" }}
-                        align="center"
-                      >
+                      <TableCell sx={{ fontWeight: "700" }} align="center">
                         {row.deluxe}
                       </TableCell>
                     </TableRow>

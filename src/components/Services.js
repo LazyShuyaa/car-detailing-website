@@ -22,35 +22,53 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box id="services" sx={{ flexGrow: 1 }}>
-             <Grid  color="#8aa3b4;" mt={5}  id="service">
-       .
-        </Grid>
-      <Grid  mt={5} >
-      
+      <Grid color="#8aa3b4;" mt={5} id="service">
+        .
       </Grid>
-  
+      <Grid mt={5}></Grid>
+
       <Divider>
-        <Typography
-          sx={{ display: { xs: "none", sm: "none", md: "flex" } }}
-          variant="h2"
-        >
-          Additional Services
-        </Typography>
-        <Typography
-          sx={{ display: { xs: "none", sm: "flex", md: "none", xl: "none" } }}
-          variant="h4"
-        >
-          Additional Services
-        </Typography>
-        <Typography
+        <Paper
           sx={{
-            display: { xs: "flex", sm: "none", md: "none" },
-            fontSize: { xs: "2rem" },
+            p: ".2rem",
+            pr: "1.3rem",
+            pl: "1.3rem",
+            borderRadius: "65px",
+            bgcolor: "primary.main",
+            margin: "auto",
+            display: "flex",
           }}
-          variant="h6"
+          elevation={3}
         >
-          Additional Services
-        </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "none", md: "flex" },
+            }}
+            variant="h2"
+          >
+            Other Services
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "flex", md: "none", xl: "none" },
+            }}
+            variant="h4"
+          >
+            Other Services
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "flex", sm: "none", md: "none" },
+              fontSize: { xs: "2rem" },
+            }}
+            variant="h6"
+          >
+            Add-On Services
+          </Typography>
+        </Paper>
       </Divider>
       <br />
       <Grid
@@ -286,7 +304,6 @@ export default function BasicTable() {
                   Trucks − $575
                 </Typography>
                 <Typography
-                  id="hours"
                   variant="h6"
                   bgcolor="secondary.dark"
                   color="primary.contrastText"
