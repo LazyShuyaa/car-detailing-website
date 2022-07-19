@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Additional Service Price section
+// Goes to ==> App.js Component
+// *****************************************************************************
+
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -44,13 +49,13 @@ export default function BasicTable() {
       <br />
       <Grid
         container
-        spacing={2}
+        spacing={3}
         direction="row"
         justifyContent="center"
         alignItems="center"
       >
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={11} md={6} lg={4}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -60,6 +65,7 @@ export default function BasicTable() {
                 <Typography
                   variant="h6"
                   sx={{
+                    pl: "0px",
                     fontWeight: 700,
                   }}
                 >
@@ -85,7 +91,7 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={11} md={6} lg={4}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -120,7 +126,7 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={11} md={6} lg={4}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -155,7 +161,7 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={11} md={6} lg={4}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -190,7 +196,7 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=========== GRID BOX START =================================> */}
-        <Grid item xs={11} md={6} lg={4}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -229,12 +235,12 @@ export default function BasicTable() {
 
       <Grid
         container
-        spacing={2}
+        spacing={5}
         direction="row"
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={11} md={5} lg={4} xl={2.5}>
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}

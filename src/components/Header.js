@@ -148,7 +148,7 @@ const Header = () => {
                 sx={{
                   my: 2,
                   width: "140px",
-                  bgcolor: "secondary.dark",
+                  bgcolor: "primary.main",
                   display: "flex",
                 }}
               >

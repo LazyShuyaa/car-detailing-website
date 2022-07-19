@@ -1,6 +1,6 @@
 // *****************************************************************************
-// This component displays the Projects I've completed
-// Goes to ==> MainSection.js Component
+// This component displays the Images for Body
+// Goes to ==> App.js Component
 // *****************************************************************************
 
 import React, { Component } from "react";

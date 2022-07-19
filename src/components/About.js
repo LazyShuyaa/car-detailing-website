@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Company Mission Statement
+// Goes to ==> App.js Component
+// *****************************************************************************
+
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -31,8 +36,11 @@ export default function AboutUs() {
       <Divider>
         <Paper
           sx={{
-            borderRadius: "15px",
-            bgcolor: "primary.dark",
+            p: ".2rem",
+            pr: "1.3rem",
+            pl: "1.3rem",
+            borderRadius: "65px",
+            bgcolor: "primary.main",
             margin: "auto",
             display: "flex",
           }}

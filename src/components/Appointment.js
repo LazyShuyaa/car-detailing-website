@@ -1,3 +1,8 @@
+// *****************************************************************************
+// This component displays the Appointment section and links
+// Goes to ==> App.js Component
+// *****************************************************************************
+
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
