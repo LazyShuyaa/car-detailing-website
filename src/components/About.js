@@ -46,7 +46,7 @@ export default function AboutUs() {
             variant="h2"
             color="primary.contrastText"
           >
-            Great Detailing
+            Auto Detailing
           </Typography>
 
           <Typography
@@ -57,7 +57,7 @@ export default function AboutUs() {
             variant="h4"
             color="primary.contrastText"
           >
-            Great Detailing
+            Auto Detailing
           </Typography>
           <Typography
             sx={{
@@ -68,7 +68,7 @@ export default function AboutUs() {
             variant="h6"
             color="primary.contrastText"
           >
-            Great Detailing
+            Auto Detailing
           </Typography>
         </Paper>
       </Divider>
