@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.146b76c4.css",
-    "main.js": "/static/js/main.b25f5405.js",
+    "main.js": "/static/js/main.ea198e44.js",
     "static/js/787.83f6ed8a.chunk.js": "/static/js/787.83f6ed8a.chunk.js",
     "static/media/Willis_Deluxe_Detail_Logo.png": "/static/media/Willis_Deluxe_Detail_Logo.d90a4b34b30f69336b09.png",
     "static/media/Polishing Car Tire.webp": "/static/media/Polishing Car Tire.a7a027cb777babf59633.webp",
@@ -42,11 +42,11 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.146b76c4.css.map": "/static/css/main.146b76c4.css.map",
-    "main.b25f5405.js.map": "/static/js/main.b25f5405.js.map",
+    "main.ea198e44.js.map": "/static/js/main.ea198e44.js.map",
     "787.83f6ed8a.chunk.js.map": "/static/js/787.83f6ed8a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.146b76c4.css",
-    "static/js/main.b25f5405.js"
+    "static/js/main.ea198e44.js"
   ]
 }
