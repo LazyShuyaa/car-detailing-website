@@ -56,7 +56,6 @@ export default function AboutUs() {
           >
             Auto Detailing
           </Typography>
-
           <Typography
             sx={{
               fontWeight: "400",
@@ -88,7 +87,6 @@ export default function AboutUs() {
       >
         Amazing Quality Service
       </Typography>
-
       <Typography
         color="primary.main"
         sx={{
@@ -134,11 +132,9 @@ export default function AboutUs() {
         </Grid>
         {/*//=========== GRID END =======================================> */}
       </Grid>
-
       <br />
 
       {/*//=========== GRID BOX START =================================> */}
-
       <Grid
         container
         spacing={2}
@@ -180,11 +176,10 @@ export default function AboutUs() {
                 you are not satisfied, please let us know and we will do
                 whatever we can to make things right!
               </Typography>
-
               <Button
                 sx={{ mt: "5px" }}
                 color="info"
-                href="#appointment"
+                href="#contact"
                 startIcon={<ArrowDownwardIcon />}
                 variant="contained"
               >

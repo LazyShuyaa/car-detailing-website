@@ -27,7 +27,7 @@ const pages = [
   <Link color="#000000" underline="none" href="#price">
     Detailing Prices
   </Link>,
-    <Link color="#000000" underline="none" href="#service">
+  <Link color="#000000" underline="none" href="#service">
     Additional Services
   </Link>,
   <Link color="#000000" underline="none" href="#hours">

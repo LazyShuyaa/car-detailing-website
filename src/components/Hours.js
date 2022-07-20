@@ -32,7 +32,7 @@ export default function BasicTable() {
       <Grid mt={5}></Grid>
 
       <Divider>
-      <Paper
+        <Paper
           sx={{
             p: ".2rem",
             pr: "1.3rem",
@@ -44,39 +44,38 @@ export default function BasicTable() {
           }}
           elevation={3}
         >
-        <Typography
-          sx={{
-            fontWeight: "400",
-            display: { xs: "none", sm: "none", md: "flex" },
-          }}
-          variant="h2"
-        >
-          Business Hours
-        </Typography>
-        <Typography
-          sx={{
-            fontWeight: "400",
-            display: { xs: "none", sm: "flex", md: "none", xl: "none" },
-          }}
-          variant="h4"
-        >
-          Business Hours
-        </Typography>
-        <Typography
-          sx={{
-            fontWeight: "400",
-            display: { xs: "flex", sm: "none", md: "none" },
-            fontSize: { xs: "2rem" },
-          }}
-          variant="h6"
-        >
-          Business Hours
-        </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "none", md: "flex" },
+            }}
+            variant="h2"
+          >
+            Business Hours
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "none", sm: "flex", md: "none", xl: "none" },
+            }}
+            variant="h4"
+          >
+            Business Hours
+          </Typography>
+          <Typography
+            sx={{
+              fontWeight: "400",
+              display: { xs: "flex", sm: "none", md: "none" },
+              fontSize: { xs: "2rem" },
+            }}
+            variant="h6"
+          >
+            Business Hours
+          </Typography>
         </Paper>
       </Divider>
       <br />
       {/*//=========== GRID BOX START =================================> */}
-
       <Grid
         container
         spacing={2}
@@ -363,9 +362,11 @@ export default function BasicTable() {
                 </Grid>
 
                 <Divider variant="middle">
-                  <Typography pt={3} variant="h5" sx={{ fontWeight: "500" }}>
-                   
-                  </Typography>
+                  <Typography
+                    pt={3}
+                    variant="h5"
+                    sx={{ fontWeight: "500" }}
+                  ></Typography>
                 </Divider>
               </Paper>
             </Grid>

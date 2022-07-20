@@ -34,7 +34,13 @@ class Footer extends Component {
         alignItems="center"
       >
         <Grid item xs={12}>
-          <Item sx={{ bgcolor: "primary.main", color: "black", borderRadius: "0px"  }}>
+          <Item
+            sx={{
+              bgcolor: "primary.main",
+              color: "black",
+              borderRadius: "0px",
+            }}
+          >
             <Typography sx={{ fontSize: ".7rem" }}>
               *Prices based on condition of vehicle (prices may vary).
               **Appointments or drop-off recommended for Deluxe Detailing (2-3

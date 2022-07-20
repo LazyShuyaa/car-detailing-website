@@ -1,6 +1,5 @@
-
-import './App.css';
-import Box from '@mui/material/Box';
+import "./App.css";
+import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Header from "./components/Header";
@@ -9,16 +8,15 @@ import Body from "./components/Body";
 import Prices from "./components/Prices";
 import Services from "./components/Services";
 import Hours from "./components/Hours";
-import Contact from "./components/Contact.js"
-import DetailingImages from "./components/DetailingImages";
-import Appointment from "./components/Appointment";
+import Contact from "./components/Contact.js";
+import ImageScroll from "./components/ImageScroll";
+import FollowUs from "./components/FollowUs";
 import FinePrint from "./components/FinePrint";
 import Footer from "./components/Footer";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
-
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
 
 const theme = createTheme({
   palette: {
@@ -43,16 +41,15 @@ function App() {
       <ThemeProvider theme={theme}>
         <Header />
         <About />
-        <Body /> 
-        <Prices/>
+        <Body />
+        <Prices />
         <Services />
-        <Hours/>
+        <ImageScroll />
+        <Hours />
         <Contact />
-       
-        <Appointment />
+        <FollowUs />
         <FinePrint />
         <Footer />
-
       </ThemeProvider>
     </Box>
   );
