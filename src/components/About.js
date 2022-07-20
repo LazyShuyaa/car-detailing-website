@@ -84,13 +84,13 @@ export default function AboutUs() {
       <Typography
         sx={{ display: "flex", justifyContent: "center" }}
         variant="h5"
-        color="primary.contrastText"
+        color="primary.main"
       >
         Amazing Quality Service
       </Typography>
 
       <Typography
-        color="primary.contrastText"
+        color="primary.main"
         sx={{
           fontSize: { xs: "1.rem", md: "1.3rem" },
           display: "flex",
@@ -104,7 +104,7 @@ export default function AboutUs() {
         At Willis Deluxe Detailing we take pride in the quality of our work.
       </Typography>
       <Typography
-        color="primary.contrastText"
+        color="primary.main"
         sx={{
           fontSize: { xs: "1.rem", md: "1.3rem" },
           display: "flex",
