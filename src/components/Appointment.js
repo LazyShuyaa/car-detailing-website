@@ -11,6 +11,7 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Image from "mui-image";
+import DetailingImages from "./DetailingImages";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -30,6 +31,38 @@ export default function AboutUs() {
       id="appointment"
       sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
     >
+      <br />
+
+      {/*//=========== GRID BOX START =================================> */}
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+      >
+        {/*//=========== GRID BOX START =================================> */}
+        <Grid
+          sx={{ display: "flex", flexDirection: "column" }}
+          item
+          xs={11}
+          sm={10}
+          md={10}
+          lg={6}
+          xl={5}
+        >
+          <Item sx={{ bgcolor: "primary.main", color: "white" }}>
+            <DetailingImages />
+          </Item>
+        </Grid>
+        {/*//=========== GRID END =======================================> */}
+
+        {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
+      </Grid>
+
+      <br />
+      <br />
+
       {/*//=========== GRID BOX START =================================> */}
       <Grid
         container
@@ -44,6 +77,8 @@ export default function AboutUs() {
           item
           xs={11}
           md={6}
+          lg={5}
+          xl={4}
         >
           <Item sx={{ bgcolor: "primary.main", color: "white" }}>
             <Image

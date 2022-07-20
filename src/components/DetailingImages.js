@@ -18,13 +18,11 @@ export default function CustomImageList() {
   return (
     <ImageList
       sx={{
-        width: 500,
-        height: 450,
+        height: { xs: "300px", sm: "500px", md: "750px", lg: "800px" },
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: "translateZ(0)",
       }}
-      rowHeight={200}
-      gap={1}
+      gap={5}
     >
       {itemData.map((item) => {
         const cols = item.featured ? 2 : 1;
@@ -38,14 +36,6 @@ export default function CustomImageList() {
               loading="lazy"
             />
 
-            {/* <img
-              {...srcset(item.img, 250, 200, rows, cols)}
-              alt={item.title}
-              loading="lazy"
-            /> */}
-            <img
-              src={require("../images/Screen Shot 2022-06-03 at 1.09.01 PM.webp")}
-            />
             <ImageListItemBar
               sx={{
                 background:
@@ -73,65 +63,101 @@ export default function CustomImageList() {
 
 const itemData = [
   {
-    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/headlight.webp",
-    title: "Interior Results",
-    author: "@bkristastucchio",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/interior_clean3_result.webp",
+    title: "Interior Detailing Results",
+    author: "@JasonW",
     featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d",
-    title: "Burger",
-    author: "@rollelflex_graphy726",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1522770179533-24471fcdba45",
-    title: "Camera",
-    author: "@helloimnik",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c",
-    title: "Coffee",
-    author: "@nolanissac",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1533827432537-70133748f5c8",
-    title: "Hats",
-    author: "@hjrc33",
-  },
-  {
-    img: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62",
-    title: "Honey",
-    author: "@arwinneil",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/before_interior2_result.webp",
+    title: "Before",
+    author: "@JasonW",
     featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1516802273409-68526ee1bdd6",
-    title: "Basketball",
-    author: "@tjdragotta",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/after_interior2_result.webp",
+    title: "After",
+    author: "@JasonW",
+    featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1518756131217-31eb79b20e8f",
-    title: "Fern",
-    author: "@katie_wasserman",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/before_interior_result.webp",
+    title: "Before",
+    author: "@JasonW",
+    featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1597645587822-e99fa5d45d25",
-    title: "Mushrooms",
-    author: "@silverdalex",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/after_interior_result.webp",
+    title: "After",
+    author: "@JasonW",
+    featured: true,
   },
   {
-    img: "https://images.unsplash.com/photo-1567306301408-9b74779a11af",
-    title: "Tomato basil",
-    author: "@shelleypauls",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/bumber_before_result.webp",
+    title: "Before",
+    author: "@JasonW",
   },
   {
-    img: "https://images.unsplash.com/photo-1471357674240-e1a485acb3e1",
-    title: "Sea star",
-    author: "@peterlaster",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/bumper_after_result.webp",
+    title: "After",
+    author: "@JasonW",
   },
   {
-    img: "https://images.unsplash.com/photo-1589118949245-7d38baf380d6",
-    title: "Bike",
-    author: "@southside_customs",
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/exterior_clean2_result.webp",
+    title: "Deluxe Detail",
+    author: "@JasonW",
+    featured: true,
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/exterior_clean_result.webp",
+    title: "After",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/interior_clean2_result.webp",
+    title: "After",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/headlight_before_result.webp",
+    title: "Before",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/headlight_after_result.webp",
+    title: "After",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/interior_clean4_result.webp",
+    title: "After",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/interior_clean_result.webp",
+    title: "After",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/interior_clean5_result.webp",
+    title: "Interior Detail",
+    author: "@JasonW",
+    featured: true,
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/wheels_before_after_result.webp",
+    title: "Exterior Detail",
+    author: "@JasonW",
+    featured: true,
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/scratch_before_result.webp",
+    title: "Before",
+    author: "@JasonW",
+  },
+  {
+    img: "https://raw.githubusercontent.com/JeremyDuncan/car-detailing-website/main/src/images/work_images/scratch_after_result.webp",
+    title: "After",
+    author: "@JasonW",
   },
 ];

@@ -34,14 +34,14 @@ class Body extends Component {
           alignItems="center"
         >
           {/*//=========== GRID BOX START =================================> */}
-          <Grid item xs={11} md={4.6}>
+          <Grid item xs={11} md={4.6} xl={2.1}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image src={require("../images/headlight.webp")} />
             </Item>
           </Grid>
           {/*//=========== GRID END =======================================> */}
           {/*//=========== GRID BOX START =================================> */}
-          <Grid item xs={11} md={6}>
+          <Grid item xs={11} md={6} xl={2.7}>
             <Item sx={{ bgcolor: "primary.main", color: "white" }}>
               <Image src={require("../images/Polishing Car Tire.webp")} />
             </Item>

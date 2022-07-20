@@ -48,7 +48,7 @@ function App() {
         <Services />
         <Hours/>
         <Contact />
-        <DetailingImages />
+       
         <Appointment />
         <FinePrint />
         <Footer />
