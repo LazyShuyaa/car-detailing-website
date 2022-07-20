@@ -114,6 +114,111 @@ export default function BasicTable() {
           </Item>
         </Grid>
 
+         {/*//=========== GRID BOX START =================================> */}
+         <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Plastic Resoration
+                </Typography>
+              </Divider>
+            </Paper>
+            <Grid sx={{ bgcolor: "primary.light" }}>
+              <Paper elevation={4}>
+                <Typography
+                  variant="h6"
+                  bgcolor="secondary.dark"
+                  color="primary.contrastText"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  $40
+                </Typography>
+              </Paper>
+            </Grid>
+          </Item>
+        </Grid>
+
+ {/*//=========== GRID BOX START =================================> */}
+ <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Road Tar Removal
+                </Typography>
+              </Divider>
+            </Paper>
+            <Grid sx={{ bgcolor: "primary.light" }}>
+              <Paper elevation={4}>
+                <Typography
+                  variant="h6"
+                  bgcolor="secondary.dark"
+                  color="primary.contrastText"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  $15
+                </Typography>
+              </Paper>
+            </Grid>
+          </Item>
+        </Grid>
+
+ {/*//=========== GRID BOX START =================================> */}
+ <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+          <Item
+            elevation={4}
+            sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
+          >
+            <Paper sx={{ bgcolor: "primary.light" }}>
+              <Divider variant="middle">
+                <Typography
+                  variant="h6"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  Minor Scratch Removal
+                </Typography>
+              </Divider>
+            </Paper>
+            <Grid sx={{ bgcolor: "primary.light" }}>
+              <Paper elevation={4}>
+                <Typography
+                  variant="h6"
+                  bgcolor="secondary.dark"
+                  color="primary.contrastText"
+                  sx={{
+                    fontWeight: 700,
+                  }}
+                >
+                  $25
+                </Typography>
+              </Paper>
+            </Grid>
+          </Item>
+        </Grid>
+
         {/*//=========== GRID BOX START =================================> */}
         <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item

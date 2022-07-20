@@ -16,6 +16,12 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
+
+import HandWashButton from "./dialog_button__components/HandWash";
+import InteriorDetailButton from "./dialog_button__components/InteriorDetail";
+import ExteriorDetailButton from "./dialog_button__components/ExteriorDetail";
+import DeluxeButton from "./dialog_button__components/DeluxeDetail";
+
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -49,7 +55,6 @@ export default function BasicTable() {
       </Grid>
       <Grid mt={5}></Grid>
       <br />
-
       <Divider>
         <Paper
           sx={{
@@ -94,6 +99,8 @@ export default function BasicTable() {
         </Paper>
       </Divider>
       <br />
+      <br />
+
       <Grid
         container
         spacing={5}
@@ -606,6 +613,31 @@ export default function BasicTable() {
         </Grid>
 
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
+      </Grid>
+      <br />
+      <br />
+
+      {/* === === === === === DETAIL BUTTONS === === === === === === === ===*/}
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        sx={{ display: "flex", gap: "25px", pl: "1.5rem", pr: ".5rem" }}
+      >
+        <Paper sx={{ bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
+          <HandWashButton />
+        </Paper>
+        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
+          <InteriorDetailButton />
+        </Paper>
+        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
+          <ExteriorDetailButton />
+        </Paper>
+        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
+          <DeluxeButton />
+        </Paper>
       </Grid>
     </Box>
   );
