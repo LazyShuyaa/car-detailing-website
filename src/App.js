@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "./components/Header";
 import About from "./components/About";
 import Body from "./components/Body";
-import Prices from "./components/Prices";
+import DetailingPrices from "./components/DetailingPrices";
 import Services from "./components/Services";
 import Hours from "./components/Hours";
 import Contact from "./components/Contact.js";
@@ -42,7 +42,7 @@ function App() {
         <Header />
         <About />
         <Body />
-        <Prices />
+        <DetailingPrices />
         <Services />
         <ImageScroll />
         <Hours />
