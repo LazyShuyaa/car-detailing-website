@@ -6,7 +6,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Body from "./components/Body";
 import DetailingPrices from "./components/DetailingPrices";
-import Services from "./components/Services";
+import ServicePrices from "./components/ServicePrices";
 import Hours from "./components/Hours";
 import Contact from "./components/Contact.js";
 import ImageScroll from "./components/ImageScroll";
@@ -43,7 +43,7 @@ function App() {
         <About />
         <Body />
         <DetailingPrices />
-        <Services />
+        <ServicePrices />
         <ImageScroll />
         <Hours />
         <Contact />
