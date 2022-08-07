@@ -19,6 +19,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
+import Image from "mui-image";
 import * as React from "react";
 import AppointmentButton from "../components/AppointmentButton";
 import DeluxeButton from "../components/dialog_button__components/DeluxeDetail";
@@ -110,40 +111,48 @@ export default function BasicTable() {
           sx={{
             bgcolor: "primary.dark",
             display: "flex",
-            gap: "25px",
+            flexDirection: "column",
+            gap: "5px",
             p: ".5rem",
           }}
         >
+          <Image src={require("../images/info_images/hand_wash.webp")} />
           <HandWashButton />
         </Paper>
         <Paper
           sx={{
             bgcolor: "primary.dark",
             display: "flex",
-            gap: "25px",
+            flexDirection: "column",
+            gap: "5px",
             p: ".5rem",
           }}
         >
+          <Image src={require("../images/info_images/interior_detail.webp")} />
           <InteriorDetailButton />
         </Paper>
         <Paper
           sx={{
             bgcolor: "primary.dark",
             display: "flex",
-            gap: "25px",
+            flexDirection: "column",
+            gap: "5px",
             p: ".5rem",
           }}
         >
+          <Image src={require("../images/info_images/exterior_detail.webp")} />
           <ExteriorDetailButton />
         </Paper>
         <Paper
           sx={{
             bgcolor: "primary.dark",
             display: "flex",
-            gap: "25px",
+            flexDirection: "column",
+            gap: "5px",
             p: ".5rem",
           }}
         >
+          <Image src={require("../images/info_images/deluxe_detail.webp")} />
           <DeluxeButton />
         </Paper>
       </Grid>
