@@ -6,14 +6,14 @@ import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import DetailingPrices from "./components/DetailingPrices";
 import FinePrint from "./components/FinePrint";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Hours from "./components/Hours";
-import ServicePrices from "./components/ServicePrices";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import DetailingPrices from "./pages/DetailingPrices";
+import Hours from "./pages/Hours";
+import ServicePrices from "./pages/ServicePrices";
 
 const theme = createTheme({
   palette: {
@@ -46,8 +46,6 @@ function App() {
             <Route path="/schedule-appointment" element={<Contact />} />
           </Routes>
         </Router>
-
-        {/* <Body /> */}
         <FinePrint />
         <Footer />
       </ThemeProvider>
