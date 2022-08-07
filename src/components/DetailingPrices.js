@@ -7,9 +7,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Box from "@mui/material/Box";
-import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
@@ -22,11 +20,11 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
-import AppointmentButton from "../AppointmentButton";
-import DeluxeButton from "../dialog_button__components/DeluxeDetail";
-import ExteriorDetailButton from "../dialog_button__components/ExteriorDetail";
-import HandWashButton from "../dialog_button__components/HandWash";
-import InteriorDetailButton from "../dialog_button__components/InteriorDetail";
+import AppointmentButton from "./AppointmentButton";
+import DeluxeButton from "./dialog_button__components/DeluxeDetail";
+import ExteriorDetailButton from "./dialog_button__components/ExteriorDetail";
+import HandWashButton from "./dialog_button__components/HandWash";
+import InteriorDetailButton from "./dialog_button__components/InteriorDetail";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
