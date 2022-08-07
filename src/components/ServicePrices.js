@@ -3,13 +3,16 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import * as React from "react";
-import { styled } from "@mui/material/styles";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
+import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import * as React from "react";
+import AppointmentButton from "./AppointmentButton";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -22,9 +25,7 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box id="services" sx={{ flexGrow: 1 }}>
-      <Grid color="#475762" mt={5} id="service">
-        .
-      </Grid>
+      <Grid color="#475762" mt={5} id="service"></Grid>
       <Grid mt={5}></Grid>
 
       <Divider>
@@ -114,8 +115,8 @@ export default function BasicTable() {
           </Item>
         </Grid>
 
-         {/*//=========== GRID BOX START =================================> */}
-         <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+        {/*//=========== GRID BOX START =================================> */}
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -149,8 +150,8 @@ export default function BasicTable() {
           </Item>
         </Grid>
 
- {/*//=========== GRID BOX START =================================> */}
- <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+        {/*//=========== GRID BOX START =================================> */}
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -184,8 +185,8 @@ export default function BasicTable() {
           </Item>
         </Grid>
 
- {/*//=========== GRID BOX START =================================> */}
- <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
+        {/*//=========== GRID BOX START =================================> */}
+        <Grid item xs={11.6} sm={11} md={5.5} lg={3.7} xl={3.7}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
@@ -424,6 +425,7 @@ export default function BasicTable() {
         </Grid>
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
       </Grid>
+      <AppointmentButton />
     </Box>
   );
 }

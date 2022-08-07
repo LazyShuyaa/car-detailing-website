@@ -3,20 +3,23 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import * as React from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import Image from "mui-image";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import CallIcon from "@mui/icons-material/Call";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import Image from "mui-image";
+import * as React from "react";
+import AppointmentButton from "./AppointmentButton";
+import FollowUs from "./FollowUs";
+import ImageScroll from "./ImageScroll";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -179,8 +182,8 @@ export default function AboutUs() {
               <Button
                 sx={{ mt: "5px" }}
                 color="info"
-                href="#contact"
-                startIcon={<ArrowDownwardIcon />}
+                href="/schedule-appointment"
+                startIcon={<CallIcon />}
                 variant="contained"
               >
                 Schedule An Appointment!
@@ -193,7 +196,10 @@ export default function AboutUs() {
 
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
       </Grid>
+      <ImageScroll />
       <br />
+      <FollowUs />
+      <AppointmentButton />
     </Box>
   );
 }

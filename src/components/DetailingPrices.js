@@ -3,29 +3,30 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import * as React from "react";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
-
-import HandWashButton from "./dialog_button__components/HandWash";
-import InteriorDetailButton from "./dialog_button__components/InteriorDetail";
-import ExteriorDetailButton from "./dialog_button__components/ExteriorDetail";
-import DeluxeButton from "./dialog_button__components/DeluxeDetail";
-
-import "@fontsource/roboto/300.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
+import * as React from "react";
+import AppointmentButton from "../AppointmentButton";
+import DeluxeButton from "../dialog_button__components/DeluxeDetail";
+import ExteriorDetailButton from "../dialog_button__components/ExteriorDetail";
+import HandWashButton from "../dialog_button__components/HandWash";
+import InteriorDetailButton from "../dialog_button__components/InteriorDetail";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -50,11 +51,8 @@ const fullSuvRows = [createData("$40", "$70", "$75", "$200")];
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1, color: "primary.contrastText" }}>
-      <Grid color="#475762" mt={5} id="price">
-        .
-      </Grid>
+      <Grid color="#475762" mt={5} id="price"></Grid>
       <Grid mt={5}></Grid>
-      <br />
       <Divider>
         <Paper
           sx={{
@@ -101,6 +99,57 @@ export default function BasicTable() {
       <br />
       <br />
 
+      {/* === === === === === DETAIL BUTTONS === === === === === === === ===*/}
+      <Grid
+        container
+        spacing={2}
+        direction="row"
+        justifyContent="center"
+        alignItems="center"
+        sx={{ display: "flex", gap: "25px", pl: "1.5rem", pr: ".5rem" }}
+      >
+        <Paper
+          sx={{
+            bgcolor: "primary.dark",
+            display: "flex",
+            gap: "25px",
+            p: ".5rem",
+          }}
+        >
+          <HandWashButton />
+        </Paper>
+        <Paper
+          sx={{
+            bgcolor: "primary.dark",
+            display: "flex",
+            gap: "25px",
+            p: ".5rem",
+          }}
+        >
+          <InteriorDetailButton />
+        </Paper>
+        <Paper
+          sx={{
+            bgcolor: "primary.dark",
+            display: "flex",
+            gap: "25px",
+            p: ".5rem",
+          }}
+        >
+          <ExteriorDetailButton />
+        </Paper>
+        <Paper
+          sx={{
+            bgcolor: "primary.dark",
+            display: "flex",
+            gap: "25px",
+            p: ".5rem",
+          }}
+        >
+          <DeluxeButton />
+        </Paper>
+      </Grid>
+      <br />
       <Grid
         container
         spacing={5}
@@ -614,31 +663,7 @@ export default function BasicTable() {
 
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
       </Grid>
-      <br />
-      <br />
-
-      {/* === === === === === DETAIL BUTTONS === === === === === === === ===*/}
-      <Grid
-        container
-        spacing={2}
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ display: "flex", gap: "25px", pl: "1.5rem", pr: ".5rem" }}
-      >
-        <Paper sx={{ bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
-          <HandWashButton />
-        </Paper>
-        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
-          <InteriorDetailButton />
-        </Paper>
-        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
-          <ExteriorDetailButton />
-        </Paper>
-        <Paper sx={{  bgcolor: "primary.dark", display: "flex", gap: "25px", p: ".5rem" }}>
-          <DeluxeButton />
-        </Paper>
-      </Grid>
+      <AppointmentButton />
     </Box>
   );
 }

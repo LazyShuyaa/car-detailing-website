@@ -3,20 +3,22 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import * as React from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Divider from "@mui/material/Divider";
-import Paper from "@mui/material/Paper";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import CallIcon from "@mui/icons-material/Call";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import CallIcon from "@mui/icons-material/Call";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Typography from "@mui/material/Typography";
+import * as React from "react";
+import AppointmentButton from "./AppointmentButton";
+import FollowUs from "./FollowUs";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -29,11 +31,8 @@ const Item = styled(Paper)(({ theme }) => ({
 export default function BasicTable() {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Grid color="#475762" mt={5} id="contact">
-        .
-      </Grid>
+      <Grid color="#475762" mt={5} id="contact"></Grid>
       <Grid mt={5}></Grid>
-
       <Divider>
         <Paper
           sx={{
@@ -155,6 +154,8 @@ export default function BasicTable() {
         </Grid>
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
       </Grid>
+      <br />
+      <FollowUs />
       <br />
     </Box>
   );

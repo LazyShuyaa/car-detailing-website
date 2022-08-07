@@ -3,18 +3,18 @@
 // Goes to ==> App.js Component
 // *****************************************************************************
 
-import * as React from "react";
-import { styled } from "@mui/material/styles";
-import Box from "@mui/material/Box";
-import Grid from "@mui/material/Grid";
-import Paper from "@mui/material/Paper";
-import Button from "@mui/material/Button";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import Image from "mui-image";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import { styled } from "@mui/material/styles";
+import Image from "mui-image";
+import * as React from "react";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#c2c2c2" : "#fff",
@@ -64,7 +64,6 @@ export default function AboutUs() {
         {/*//=========== GRID END =======================================> */}
         {/*//=============== GRID END GOES TO BOTTOM  =====================> */}
       </Grid>
-      <br />
     </Box>
   );
 }

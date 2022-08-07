@@ -1,22 +1,19 @@
-import "./App.css";
-import Box from "@mui/material/Box";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-import Header from "./components/Header";
-import About from "./components/About";
-import Body from "./components/Body";
-import DetailingPrices from "./components/DetailingPrices";
-import ServicePrices from "./components/ServicePrices";
-import Hours from "./components/Hours";
-import Contact from "./components/Contact.js";
-import ImageScroll from "./components/ImageScroll";
-import FollowUs from "./components/FollowUs";
-import FinePrint from "./components/FinePrint";
-import Footer from "./components/Footer";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import Box from "@mui/material/Box";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import DetailingPrices from "./components/DetailingPrices";
+import FinePrint from "./components/FinePrint";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hours from "./components/Hours";
+import ServicePrices from "./components/ServicePrices";
 
 const theme = createTheme({
   palette: {
@@ -39,15 +36,18 @@ function App() {
   return (
     <Box id="home" className="App">
       <ThemeProvider theme={theme}>
-        <Header />
-        <About />
-        <Body />
-        <DetailingPrices />
-        <ServicePrices />
-        <ImageScroll />
-        <Hours />
-        <Contact />
-        <FollowUs />
+        <Router>
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<About />} />
+            <Route path="/detailing-prices" element={<DetailingPrices />} />
+            <Route path="/additional-services" element={<ServicePrices />} />
+            <Route path="/business-hours" element={<Hours />} />
+            <Route path="/schedule-appointment" element={<Contact />} />
+          </Routes>
+        </Router>
+
+        {/* <Body /> */}
         <FinePrint />
         <Footer />
       </ThemeProvider>
