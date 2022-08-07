@@ -48,7 +48,12 @@ class Footer extends Component {
           }}
         >
           <Grid p={0.5}>
-            <Button startIcon={<HomeIcon />} size="small" variant="contained">
+            <Button
+              sx={{ bgcolor: "primary.light" }}
+              startIcon={<HomeIcon />}
+              size="small"
+              variant="contained"
+            >
               <Link fontWeight="bold" underline="none" color="#000000" href="/">
                 Home
               </Link>
@@ -57,6 +62,7 @@ class Footer extends Component {
 
           <Grid p={0.5}>
             <Button
+              sx={{ bgcolor: "primary.light" }}
               startIcon={<LocalCarWashIcon />}
               size="small"
               variant="contained"
@@ -68,6 +74,7 @@ class Footer extends Component {
           </Grid>
           <Grid p={0.5}>
             <Button
+              sx={{ bgcolor: "primary.light" }}
               startIcon={<CarRepairIcon />}
               size="small"
               variant="contained"
@@ -80,6 +87,7 @@ class Footer extends Component {
 
           <Grid p={0.5}>
             <Button
+              sx={{ bgcolor: "primary.light" }}
               startIcon={<AccessTimeIcon />}
               size="small"
               variant="contained"
@@ -91,6 +99,7 @@ class Footer extends Component {
           </Grid>
           <Grid p={0.5}>
             <Button
+              sx={{ bgcolor: "primary.light" }}
               startIcon={<CalendarMonthIcon />}
               size="small"
               variant="contained"

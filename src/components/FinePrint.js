@@ -37,7 +37,7 @@ class Footer extends Component {
         <Grid item xs={12}>
           <Item
             sx={{
-              bgcolor: "primary.main",
+              bgcolor: "primary.light",
               color: "black",
               borderRadius: "0px",
             }}

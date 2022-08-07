@@ -199,7 +199,7 @@ export default function AboutUs() {
       <ImageScroll />
       <br />
       <FollowUs />
-      <AppointmentButton />
+      <br />
     </Box>
   );
 }
