@@ -4,12 +4,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import {
-  BrowserRouter as Router,
-  HashRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import FinePrint from "./components/FinePrint";
 import Footer from "./components/Footer";
@@ -41,7 +36,7 @@ function App() {
   return (
     <Box id="home" className="App">
       <ThemeProvider theme={theme}>
-        <HashRouter>
+        <Router>
           <Header />
           <Routes>
             <Route exact path="/" element={<About />} />
@@ -50,7 +45,7 @@ function App() {
             <Route path="/business-hours" element={<Hours />} />
             <Route path="/schedule-appointment" element={<Contact />} />
           </Routes>
-        </HashRouter>
+        </Router>
         <FinePrint />
         <Footer />
       </ThemeProvider>
