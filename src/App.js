@@ -41,6 +41,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<About />} />
             <Route path="/detailing-prices" element={<DetailingPrices />} />
+            <Route path="/prices.html" element={<DetailingPrices />} />
             <Route path="/additional-services" element={<ServicePrices />} />
             <Route path="/business-hours" element={<Hours />} />
             <Route path="/schedule-appointment" element={<Contact />} />
