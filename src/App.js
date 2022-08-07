@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import FinePrint from "./components/FinePrint";
 import Footer from "./components/Footer";
-import FooterNav from "./components/FooterNav";
 import Header from "./components/Header";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -47,7 +46,6 @@ function App() {
             <Route path="/schedule-appointment" element={<Contact />} />
           </Routes>
         </Router>
-
         <FinePrint />
         <Footer />
       </ThemeProvider>

@@ -16,18 +16,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import Link from "@mui/material/Link";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
-import Typography from "@mui/material/Typography";
 import React, { Component } from "react";
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: "center",
-  color: theme.palette.text.secondary,
-}));
 
 class Footer extends Component {
   render() {
@@ -43,7 +32,7 @@ class Footer extends Component {
           sx={{
             flexGrow: 1,
             display: "flex",
-            flexDirection: "row",
+            flexDirection: { xs: "column", sm: "column", lg: "row" },
             alignItems: "center",
           }}
         >
@@ -67,7 +56,12 @@ class Footer extends Component {
               size="small"
               variant="contained"
             >
-              <Link fontWeight="bold" underline="none" color="#000000" href="/">
+              <Link
+                fontWeight="bold"
+                underline="none"
+                color="#000000"
+                href="/detailing-prices"
+              >
                 Detailing Prices
               </Link>
             </Button>
@@ -79,7 +73,12 @@ class Footer extends Component {
               size="small"
               variant="contained"
             >
-              <Link fontWeight="bold" underline="none" color="#000000" href="/">
+              <Link
+                fontWeight="bold"
+                underline="none"
+                color="#000000"
+                href="/additional-services"
+              >
                 Additional Services
               </Link>
             </Button>
@@ -92,7 +91,12 @@ class Footer extends Component {
               size="small"
               variant="contained"
             >
-              <Link fontWeight="bold" underline="none" color="#000000" href="/">
+              <Link
+                fontWeight="bold"
+                underline="none"
+                color="#000000"
+                href="/business-hours"
+              >
                 Business Hours
               </Link>
             </Button>
@@ -104,7 +108,12 @@ class Footer extends Component {
               size="small"
               variant="contained"
             >
-              <Link fontWeight="bold" underline="none" color="#000000" href="/">
+              <Link
+                fontWeight="bold"
+                underline="none"
+                color="#000000"
+                href="/schedule-appointment"
+              >
                 Schedule Appointment
               </Link>
             </Button>

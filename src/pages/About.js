@@ -17,7 +17,6 @@ import { styled } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Image from "mui-image";
 import * as React from "react";
-import AppointmentButton from "../components/AppointmentButton";
 import FollowUs from "../components/FollowUs";
 import ImageScroll from "../components/ImageScroll";
 
