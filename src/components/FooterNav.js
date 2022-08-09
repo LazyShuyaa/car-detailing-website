@@ -66,7 +66,11 @@ class Footer extends Component {
           >
             <Grid p={0.5}>
               <Button
-                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                sx={{
+                  bgcolor: "primary.light",
+                  width: { xs: "175px" },
+                  height: { xs: "65px" },
+                }}
                 startIcon={<LocalCarWashIcon />}
                 size="small"
                 variant="contained"
@@ -83,7 +87,11 @@ class Footer extends Component {
             </Grid>
             <Grid p={0.5}>
               <Button
-                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                sx={{
+                  bgcolor: "primary.light",
+                  width: { xs: "175px" },
+                  height: { xs: "65px" },
+                }}
                 startIcon={<CarRepairIcon />}
                 size="small"
                 variant="contained"
@@ -103,7 +111,11 @@ class Footer extends Component {
           <Grid sx={{ display: "flex" }}>
             <Grid p={0.5}>
               <Button
-                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                sx={{
+                  bgcolor: "primary.light",
+                  width: { xs: "175px" },
+                  height: { xs: "65px" },
+                }}
                 startIcon={<AccessTimeIcon />}
                 size="small"
                 variant="contained"
@@ -120,7 +132,11 @@ class Footer extends Component {
             </Grid>
             <Grid p={0.5}>
               <Button
-                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                sx={{
+                  bgcolor: "primary.light",
+                  width: { xs: "175px" },
+                  height: { xs: "65px" },
+                }}
                 startIcon={<CalendarMonthIcon />}
                 size="small"
                 variant="contained"
