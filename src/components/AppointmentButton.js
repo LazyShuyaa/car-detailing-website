@@ -7,7 +7,7 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
-import CallIcon from "@mui/icons-material/Call";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
@@ -41,7 +41,7 @@ export default function BasicTable() {
           <Button
             color="info"
             href="/schedule-appointment"
-            startIcon={<CallIcon />}
+            startIcon={<CalendarMonthIcon />}
             variant="contained"
           >
             Schedule An Appointment!
