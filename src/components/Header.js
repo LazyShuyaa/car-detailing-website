@@ -57,7 +57,9 @@ const Header = () => {
   return (
     <AppBar position="sticky">
       <Container
-        sx={{ justifyContent: { xs: "space-evenly", lg: "space-around" } }}
+        sx={{
+          justifyContent: { xs: "space-evenly", lg: "space-around" },
+        }}
       >
         <Toolbar disableGutters>
           <Typography

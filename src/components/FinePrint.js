@@ -8,6 +8,7 @@ import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Grid";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
@@ -43,11 +44,13 @@ class Footer extends Component {
             }}
           >
             <FooterNav />
+            <Divider variant="middle"></Divider>
             <Typography sx={{ fontSize: ".7rem" }}>
               *Prices based on condition of vehicle (prices may vary).
               **Appointments or drop-off recommended for Deluxe Detailing (2-3
               hours).
             </Typography>
+            <Divider variant="middle"></Divider>
           </Item>
         </Grid>
       </Box>
