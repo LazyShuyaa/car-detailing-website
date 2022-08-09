@@ -144,7 +144,7 @@ export default function AboutUs() {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={11} sm={10} md={10} lg={10} xl={7}>
+        <Grid item xs={11} sm={10} md={8} lg={8} xl={4}>
           <Item
             elevation={4}
             sx={{ bgcolor: "primary.dark", color: "primary.contrastText" }}
