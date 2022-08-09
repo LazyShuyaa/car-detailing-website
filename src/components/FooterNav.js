@@ -22,7 +22,11 @@ class Footer extends Component {
   render() {
     return (
       <Box
-        sx={{ flexGrow: 0, display: "flex", flexDirection: "column" }}
+        sx={{
+          flexGrow: 0,
+          display: "flex",
+          flexDirection: "column",
+        }}
         container
         spacing={2}
         alignItems="center"
@@ -38,7 +42,11 @@ class Footer extends Component {
         >
           <Grid p={0.5}>
             <Button
-              sx={{ bgcolor: "primary.light" }}
+              sx={{
+                bgcolor: "primary.light",
+                width: { xs: "175px" },
+                height: { xs: "65px" },
+              }}
               startIcon={<HomeIcon />}
               size="small"
               variant="contained"
@@ -49,74 +57,84 @@ class Footer extends Component {
             </Button>
           </Grid>
 
-          <Grid p={0.5}>
-            <Button
-              sx={{ bgcolor: "primary.light" }}
-              startIcon={<LocalCarWashIcon />}
-              size="small"
-              variant="contained"
-            >
-              <Link
-                fontWeight="bold"
-                underline="none"
-                color="#000000"
-                href="/detailing-prices"
+          {/* flexDirection: { xs: "column", sm: "column", lg: "row" }, */}
+
+          <Grid
+            sx={{
+              display: "flex",
+            }}
+          >
+            <Grid p={0.5}>
+              <Button
+                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                startIcon={<LocalCarWashIcon />}
+                size="small"
+                variant="contained"
               >
-                Detailing Prices
-              </Link>
-            </Button>
-          </Grid>
-          <Grid p={0.5}>
-            <Button
-              sx={{ bgcolor: "primary.light" }}
-              startIcon={<CarRepairIcon />}
-              size="small"
-              variant="contained"
-            >
-              <Link
-                fontWeight="bold"
-                underline="none"
-                color="#000000"
-                href="/additional-services"
+                <Link
+                  fontWeight="bold"
+                  underline="none"
+                  color="#000000"
+                  href="/detailing-prices"
+                >
+                  Detailing Prices
+                </Link>
+              </Button>
+            </Grid>
+            <Grid p={0.5}>
+              <Button
+                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                startIcon={<CarRepairIcon />}
+                size="small"
+                variant="contained"
               >
-                Additional Services
-              </Link>
-            </Button>
+                <Link
+                  fontWeight="bold"
+                  underline="none"
+                  color="#000000"
+                  href="/additional-services"
+                >
+                  Additional Services
+                </Link>
+              </Button>
+            </Grid>
           </Grid>
 
-          <Grid p={0.5}>
-            <Button
-              sx={{ bgcolor: "primary.light" }}
-              startIcon={<AccessTimeIcon />}
-              size="small"
-              variant="contained"
-            >
-              <Link
-                fontWeight="bold"
-                underline="none"
-                color="#000000"
-                href="/business-hours"
+          <Grid sx={{ display: "flex" }}>
+            <Grid p={0.5}>
+              <Button
+                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                startIcon={<AccessTimeIcon />}
+                size="small"
+                variant="contained"
               >
-                Business Hours
-              </Link>
-            </Button>
-          </Grid>
-          <Grid p={0.5}>
-            <Button
-              sx={{ bgcolor: "primary.light" }}
-              startIcon={<CalendarMonthIcon />}
-              size="small"
-              variant="contained"
-            >
-              <Link
-                fontWeight="bold"
-                underline="none"
-                color="#000000"
-                href="/schedule-appointment"
+                <Link
+                  fontWeight="bold"
+                  underline="none"
+                  color="#000000"
+                  href="/business-hours"
+                >
+                  Business Hours
+                </Link>
+              </Button>
+            </Grid>
+            <Grid p={0.5}>
+              <Button
+                sx={{ bgcolor: "primary.light", width: { xs: "175px" } }}
+                startIcon={<CalendarMonthIcon />}
+                size="small"
+                variant="contained"
               >
-                Schedule Appointment
-              </Link>
-            </Button>
+                <Link
+                  fontWeight="bold"
+                  underline="none"
+                  color="#000000"
+                  href="/schedule-appointment"
+                >
+                  Schedule Appointment
+                </Link>
+              </Button>
+            </Grid>
           </Grid>
         </Grid>
       </Box>
