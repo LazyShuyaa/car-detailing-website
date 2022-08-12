@@ -42,6 +42,7 @@ function App() {
             <Route exact path="/" element={<About />} />
             <Route path="/detailing-prices" element={<DetailingPrices />} />
             <Route path="/prices.html" element={<DetailingPrices />} />
+            <Route path="/about.html" element={<About />} />
             <Route path="/additional-services" element={<ServicePrices />} />
             <Route path="/business-hours" element={<Hours />} />
             <Route path="/schedule-appointment" element={<Contact />} />

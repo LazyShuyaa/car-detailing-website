@@ -7,6 +7,11 @@ import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import CarRepairIcon from "@mui/icons-material/CarRepair";
+import HomeIcon from "@mui/icons-material/Home";
+import LocalCarWashIcon from "@mui/icons-material/LocalCarWash";
 import MenuIcon from "@mui/icons-material/Menu";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -21,20 +26,97 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 
 const pages = [
-  <Link color="#000000" underline="none" href="/">
+  <Link
+    sx={{
+      pr: { xs: "initial", md: ".6rem" },
+      pl: { xs: "initial", md: ".6rem" },
+    }}
+    color="#000000"
+    underline="none"
+    href="/"
+  >
+    <HomeIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "medium",
+        pr: { xs: ".5rem", md: "initial" },
+      }}
+    />
     Home
   </Link>,
-  <Link color="#000000" underline="none" href="/detailing-prices">
-    Detailing Prices
+  <Link
+    sx={{
+      pr: { xs: "initial", md: ".4rem" },
+      pl: { xs: "initial", md: ".4rem" },
+    }}
+    color="#000000"
+    underline="none"
+    href="/detailing-prices"
+  >
+    <LocalCarWashIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "medium",
+        pr: { xs: ".5rem", md: "initial" },
+      }}
+    />
+    Detailing
   </Link>,
-  <Link color="#000000" underline="none" href="/additional-services">
-    Additional Services
+  <Link
+    sx={{
+      pr: { xs: "initial", md: ".4rem" },
+      pl: { xs: "initial", md: ".4rem" },
+    }}
+    color="#000000"
+    underline="none"
+    href="/additional-services"
+  >
+    <CarRepairIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "medium",
+        pr: { xs: ".5rem", md: "initial" },
+      }}
+    />
+    Services
   </Link>,
-  <Link color="#000000" underline="none" href="/business-hours">
-    Business Hours
+  <Link
+    sx={{
+      pr: { xs: "initial", md: ".4rem" },
+      pl: { xs: "initial", md: ".4rem" },
+    }}
+    color="#000000"
+    underline="none"
+    href="/business-hours"
+  >
+    <AccessTimeIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "medium",
+        pr: { xs: ".5rem", md: "initial" },
+      }}
+    />
+    Hours
   </Link>,
   <Link color="#000000" underline="none" href="/schedule-appointment">
-    Schedule Appointment
+    <CalendarMonthIcon
+      sx={{
+        display: "inline-flex",
+        verticalAlign: "text-bottom",
+        textAlign: "center",
+        fontSize: "medium",
+        pr: { xs: ".5rem", md: "initial" },
+      }}
+    />
+    Appointments
   </Link>,
 ];
 
@@ -152,7 +234,7 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-                  width: "140px",
+
                   bgcolor: "primary.main",
                   display: "flex",
                 }}

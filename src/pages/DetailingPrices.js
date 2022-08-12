@@ -116,7 +116,11 @@ export default function BasicTable() {
             p: ".5rem",
           }}
         >
-          <Image src={require("../images/info_images/hand_wash.webp")} />
+          <Image
+            src={require("../images/info_images/hand_wash.webp")}
+            shift="right"
+            distance={400}
+          />
           <HandWashButton />
         </Paper>
         <Paper
@@ -128,7 +132,11 @@ export default function BasicTable() {
             p: ".5rem",
           }}
         >
-          <Image src={require("../images/info_images/interior_detail.webp")} />
+          <Image
+            src={require("../images/info_images/interior_detail.webp")}
+            shift="bottom"
+            distance={400}
+          />
           <InteriorDetailButton />
         </Paper>
         <Paper
@@ -140,7 +148,11 @@ export default function BasicTable() {
             p: ".5rem",
           }}
         >
-          <Image src={require("../images/info_images/exterior_detail.webp")} />
+          <Image
+            src={require("../images/info_images/exterior_detail.webp")}
+            shift="top"
+            distance={400}
+          />
           <ExteriorDetailButton />
         </Paper>
         <Paper
@@ -152,7 +164,11 @@ export default function BasicTable() {
             p: ".5rem",
           }}
         >
-          <Image src={require("../images/info_images/deluxe_detail.webp")} />
+          <Image
+            src={require("../images/info_images/deluxe_detail.webp")}
+            shift="left"
+            distance={400}
+          />
           <DeluxeButton />
         </Paper>
       </Grid>
