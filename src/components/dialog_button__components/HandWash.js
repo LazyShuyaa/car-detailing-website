@@ -1,21 +1,21 @@
 // *****************************************************************************
-// This component displays the Details when clicked 
+// This component displays the Details when clicked
 // Goes to ==> Prices.js Component
 // *****************************************************************************
 
-import * as React from "react";
+import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
+import Divider from "@mui/material/Divider";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
+import * as React from "react";
 
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
@@ -31,12 +31,16 @@ export default function AlertDialog() {
   return (
     <div>
       <Button
-        sx={{ width: "300px" }}
         endIcon={<InfoOutlinedIcon />}
         size="large"
         variant="contained"
         color="info"
         onClick={handleClickOpen}
+        sx={{
+          p: { xs: ".5rem", sm: ".4rem", md: "inital" },
+          fontSize: { xs: ".6rem", sm: "initial" },
+          width: { xs: "150px", sm: "initial", md: "220px" },
+        }}
       >
         Hand Wash
       </Button>

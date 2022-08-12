@@ -105,72 +105,88 @@ export default function BasicTable() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ display: "flex", gap: "25px", pl: "1.5rem", pr: ".5rem" }}
+        sx={{ display: "flex", pl: ".5rem", pr: ".5rem" }}
       >
-        <Paper
-          sx={{
-            bgcolor: "primary.dark",
-            display: "flex",
-            flexDirection: "column",
-            gap: "5px",
-            p: ".5rem",
-          }}
-        >
-          <Image
-            src={require("../images/info_images/hand_wash.webp")}
-            shift="right"
-            distance={400}
-          />
-          <HandWashButton />
-        </Paper>
-        <Paper
-          sx={{
-            bgcolor: "primary.dark",
-            display: "flex",
-            flexDirection: "column",
-            gap: "5px",
-            p: ".5rem",
-          }}
-        >
-          <Image
-            src={require("../images/info_images/interior_detail.webp")}
-            shift="bottom"
-            distance={400}
-          />
-          <InteriorDetailButton />
-        </Paper>
-        <Paper
-          sx={{
-            bgcolor: "primary.dark",
-            display: "flex",
-            flexDirection: "column",
-            gap: "5px",
-            p: ".5rem",
-          }}
-        >
-          <Image
-            src={require("../images/info_images/exterior_detail.webp")}
-            shift="top"
-            distance={400}
-          />
-          <ExteriorDetailButton />
-        </Paper>
-        <Paper
-          sx={{
-            bgcolor: "primary.dark",
-            display: "flex",
-            flexDirection: "column",
-            gap: "5px",
-            p: ".5rem",
-          }}
-        >
-          <Image
-            src={require("../images/info_images/deluxe_detail.webp")}
-            shift="left"
-            distance={400}
-          />
-          <DeluxeButton />
-        </Paper>
+        <Grid item xs={6} sm={5} md={4} lg={3} xl={2}>
+          <Paper
+            sx={{
+              bgcolor: "primary.dark",
+              display: "flex",
+              flexDirection: "column",
+              gap: "5px",
+              p: ".5rem",
+            }}
+          >
+            <Image
+              src={require("../images/info_images/hand_wash.webp")}
+              shift="right"
+              distance={400}
+            />
+            <Grid sx={{ display: "flex", justifyContent: "center" }}>
+              <HandWashButton />
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={5} md={4} lg={3} xl={2}>
+          <Paper
+            sx={{
+              bgcolor: "primary.dark",
+              display: "flex",
+              flexDirection: "column",
+              gap: "5px",
+              p: ".5rem",
+            }}
+          >
+            <Image
+              src={require("../images/info_images/interior_detail.webp")}
+              shift="bottom"
+              distance={400}
+            />
+            <Grid sx={{ display: "flex", justifyContent: "center" }}>
+              <InteriorDetailButton />
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={5} md={4} lg={3} xl={2}>
+          <Paper
+            sx={{
+              bgcolor: "primary.dark",
+              display: "flex",
+              flexDirection: "column",
+              gap: "5px",
+              p: ".5rem",
+            }}
+          >
+            <Image
+              src={require("../images/info_images/exterior_detail.webp")}
+              shift="top"
+              distance={400}
+            />
+            <Grid sx={{ display: "flex", justifyContent: "center" }}>
+              <ExteriorDetailButton />
+            </Grid>
+          </Paper>
+        </Grid>
+        <Grid item xs={6} sm={5} md={4} lg={3} xl={2}>
+          <Paper
+            sx={{
+              bgcolor: "primary.dark",
+              display: "flex",
+              flexDirection: "column",
+              gap: "5px",
+              p: ".5rem",
+            }}
+          >
+            <Image
+              src={require("../images/info_images/deluxe_detail.webp")}
+              shift="left"
+              distance={400}
+            />
+            <Grid sx={{ display: "flex", justifyContent: "center" }}>
+              <DeluxeButton />
+            </Grid>
+          </Paper>
+        </Grid>
       </Grid>
       <br />
       <Grid
