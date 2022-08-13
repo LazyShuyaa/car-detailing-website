@@ -31,14 +31,12 @@ export default function AlertDialog() {
   return (
     <div>
       <Button
-        endIcon={<InfoOutlinedIcon />}
         size="large"
         variant="contained"
         color="info"
         onClick={handleClickOpen}
         sx={{
           p: { xs: ".5rem", sm: ".4rem", md: "inital" },
-          fontSize: { xs: ".6rem", sm: "initial" },
           width: { xs: "150px", sm: "initial", md: "220px" },
         }}
       >

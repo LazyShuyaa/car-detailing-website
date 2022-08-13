@@ -96,7 +96,6 @@ export default function BasicTable() {
         </Paper>
       </Divider>
       <br />
-      <br />
 
       {/* === === === === === DETAIL BUTTONS === === === === === === === ===*/}
       <Grid
