@@ -4,7 +4,6 @@
 // *****************************************************************************
 
 import DirectionsCarIcon from "@mui/icons-material/DirectionsCar";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
