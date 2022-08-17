@@ -44,8 +44,8 @@ class Footer extends Component {
             <Button
               sx={{
                 bgcolor: "primary.light",
-                width: { xs: "175px" },
-                height: { xs: "65px" },
+                width: { xs: "165px" },
+                height: { xs: "50px" },
               }}
               startIcon={<HomeIcon />}
               size="small"
@@ -68,8 +68,8 @@ class Footer extends Component {
               <Button
                 sx={{
                   bgcolor: "primary.light",
-                  width: { xs: "175px" },
-                  height: { xs: "65px" },
+                  width: { xs: "165px" },
+                  height: { xs: "50px" },
                 }}
                 startIcon={<LocalCarWashIcon />}
                 size="small"
@@ -81,7 +81,7 @@ class Footer extends Component {
                   color="#000000"
                   href="/detailing-prices"
                 >
-                  Detailing Prices
+                  Detailing
                 </Link>
               </Button>
             </Grid>
@@ -89,8 +89,8 @@ class Footer extends Component {
               <Button
                 sx={{
                   bgcolor: "primary.light",
-                  width: { xs: "175px" },
-                  height: { xs: "65px" },
+                  width: { xs: "165px" },
+                  height: { xs: "50px" },
                 }}
                 startIcon={<CarRepairIcon />}
                 size="small"
@@ -102,7 +102,7 @@ class Footer extends Component {
                   color="#000000"
                   href="/additional-services"
                 >
-                  Additional Services
+                  Services
                 </Link>
               </Button>
             </Grid>
@@ -113,8 +113,8 @@ class Footer extends Component {
               <Button
                 sx={{
                   bgcolor: "primary.light",
-                  width: { xs: "175px" },
-                  height: { xs: "65px" },
+                  width: { xs: "165px" },
+                  height: { xs: "50px" },
                 }}
                 startIcon={<AccessTimeIcon />}
                 size="small"
@@ -126,7 +126,7 @@ class Footer extends Component {
                   color="#000000"
                   href="/business-hours"
                 >
-                  Business Hours
+                  Hours
                 </Link>
               </Button>
             </Grid>
@@ -134,8 +134,8 @@ class Footer extends Component {
               <Button
                 sx={{
                   bgcolor: "primary.light",
-                  width: { xs: "175px" },
-                  height: { xs: "65px" },
+                  width: { xs: "165px" },
+                  height: { xs: "50px" },
                 }}
                 startIcon={<CalendarMonthIcon />}
                 size="small"
@@ -147,7 +147,7 @@ class Footer extends Component {
                   color="#000000"
                   href="/schedule-appointment"
                 >
-                  Schedule Appointment
+                  Appointments
                 </Link>
               </Button>
             </Grid>
