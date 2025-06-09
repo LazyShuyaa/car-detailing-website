@@ -155,15 +155,14 @@ const Header = () => {
               color: "inherit",
               textDecoration: "none",
               textAlign: "bottom",
+              fontWeight: 700,
+              fontSize: "1.25rem",
+              textTransform: "uppercase",
+              letterSpacing: ".1rem",
             }}
           >
             {/* Desktop View */}
-            <img
-              alt="Willis Deluxe Detailing llc"
-              sx={{ padding: "0px", display: { xs: "none", md: "flex" } }}
-              width="70%"
-              src={require("../images/Willis_Deluxe_Detail_Logo.png")}
-            />
+            Shree Car Bike and Car Coating
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -216,14 +215,12 @@ const Header = () => {
               letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "1rem",
+              textTransform: "uppercase",
             }}
           >
             {/* Mobile View */}
-            <img
-              alt="Willis Deluxe Detailing llc"
-              width="90%"
-              src={require("../images/Willis_Deluxe_Detail_Logo.png")}
-            />{" "}
+            Shree Car Bike and Car Coating
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -234,7 +231,6 @@ const Header = () => {
                 onClick={handleCloseNavMenu}
                 sx={{
                   my: 2,
-
                   bgcolor: "primary.main",
                   display: "flex",
                 }}
